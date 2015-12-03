@@ -1,0 +1,10 @@
+@mixin esp($n,$w,$s){
+    
+    width: ($w - $s*($n - 1)) / $n;
+    
+    margin-left: $s;
+    
+    &:first-child {
+        margin-left: 0;
+    }
+}
